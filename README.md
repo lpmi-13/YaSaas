@@ -181,9 +181,9 @@ npm install
 
 ### Run the application
 
-To run the application, you need to have both the backend and the frontend up and running. This is accomplished by using the `concurrently` npm package.
+We'll Need a value for `DJANGO_SECRET_KEY`, so in the backend folder, copy `.env.example` to `.env` and change the value if you want.
 
-From the **root** directory, run:
+To run the application, you need to have both the backend and the frontend up and running. This is accomplished by using the `concurrently` npm package.
 
 ```bash
 npm start --prefix frontend
