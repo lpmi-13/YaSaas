@@ -1,5 +1,7 @@
 asgiref==3.7.2
-backports.zoneinfo==0.2.1
+# we don't want to install this on versions higher than 3.9
+# https://stackoverflow.com/questions/71712258/error-could-not-build-wheels-for-backports-zoneinfo-which-is-required-to-insta
+backports.zoneinfo==0.2.1;python_version<"3.9"
 beautifulsoup4==4.12.3
 certifi==2023.11.17
 cffi==1.16.0
